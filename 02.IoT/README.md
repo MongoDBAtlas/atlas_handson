@@ -1,3 +1,6 @@
+<img src="https://companieslogo.com/img/orig/MDB_BIG-ad812c6c.png?t=1648915248" width="50%" title="Github_Logo"/> <br>
+
+
 # MongoDB Atlas Hands-on Training
 
 ### 02. IoT Use Case with MongoDB Atlas, Kinesis Data firehose, MongoDB Charts and Atlas Datalake
@@ -18,7 +21,7 @@ mongodb+srv://atlas-account:<password>@cluster0.****.mongodb.net/myFirstDatabase
 
 데이터를 파일을 다운로드 하고 업로드 합니다. 
 데이터 파일 :    
-https://github.com/xers989/aws-isv/raw/main/02.IoT/tracking-historic-final.json
+https://github.com/MongoDBAtlas/atlas_handson/blob/main/02.IoT/tracking-historic-final.json
 
 <img src="/images/02/images03.png" width="70%" height="70%">      
 파일 선택 후 JSON을 선택 하여 Import 진행 합니다.    
@@ -70,7 +73,7 @@ MongoDB Realm webhook URL 은 Realm application 에서 Https Endpoints 에 생�
 Firehose 를 실행하여 데이터 생성을 확인 합니다.   
 Data 는 다음 Json 메시지를 Base64로 encoding 하여 줍니다.    
 `````
-{"owner": "aws-iot"}
+{"owner": "atlas-iot"}
 `````
 
 `````
@@ -109,7 +112,7 @@ Atlas Console 에서 데이터 베이스 클러스터를 선택 한 후 Online A
 <img src="/images/02/images18.png" width="70%" height="70%">
 
 Configure Online Archive 를 선택 후 다음을 선택 합니다.
-Namespace 에 aws.IoT를 입력 하고 Date Field 에 TimeStamp를 입력하고 일수를 60으로 입력 합니다.
+Namespace 에 atlas.IoT를 입력 하고 Date Field 에 TimeStamp를 입력하고 일수를 60으로 입력 합니다.
 Timestamp 항목에서 현재일 기준 60일 이전의 데이터를 선택 하여 Arhive 하는 것입니다.
 
 
